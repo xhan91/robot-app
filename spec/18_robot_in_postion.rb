@@ -2,6 +2,10 @@ require_relative 'spec_helper'
 
 describe Robot do
 
+  before(:each) do 
+    @@all_robots = []
+  end
+  
   describe "#Robot.in_position(x,y)" do
 
     it "should return a list of robots in the position" do

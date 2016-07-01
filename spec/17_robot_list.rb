@@ -2,6 +2,10 @@ require_relative 'spec_helper'
 
 describe Robot do
 
+  before(:each) do 
+    @@all_robots = []
+  end
+
   it "should track all created robots" do
     robot1 = Robot.new
     robot2 = Robot.new
